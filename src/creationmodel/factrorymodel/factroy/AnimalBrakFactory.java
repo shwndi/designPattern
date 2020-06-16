@@ -12,7 +12,7 @@ import creationmodel.factrorymodel.service.impl.Dog;
  * @date 2020-6-13
  */
 public class AnimalBrakFactory {
-    public Animal getAnimal(String name) {
+    public static Animal getAnimal(String name) {
         switch (name) {
             case "DOG":
                 return new Dog();

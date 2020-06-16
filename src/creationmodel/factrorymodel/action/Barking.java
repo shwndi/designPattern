@@ -11,12 +11,11 @@ import creationmodel.factrorymodel.service.Animal;
  */
 public class Barking {
     public static void main(String[] args) {
-        AnimalBrakFactory animal = new AnimalBrakFactory();
-        Animal animal1 = animal.getAnimal("DOG");
+        Animal animal1 = AnimalBrakFactory.getAnimal("DOG");
         animal1.bark();
-        Animal animal2 = animal.getAnimal("CAT");
+        Animal animal2 = AnimalBrakFactory.getAnimal("CAT");
         animal2.bark();
-        Animal animal3 = animal.getAnimal("CHICK");
+        Animal animal3 = AnimalBrakFactory.getAnimal("CHICK");
         animal3.bark();
 
 
