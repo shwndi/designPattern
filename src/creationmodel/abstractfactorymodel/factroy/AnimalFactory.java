@@ -5,10 +5,11 @@ import creationmodel.abstractfactorymodel.abstractbo.BaseAnimal;
 import creationmodel.abstractfactorymodel.bo.Lion;
 import creationmodel.abstractfactorymodel.bo.Monkey;
 import creationmodel.abstractfactorymodel.bo.Mouse;
-import creationmodel.abstractfactorymodel.service.Animal;
+import creationmodel.abstractfactorymodel.service.BarkAnimal;
 
 
 /**、
+ * 动物工厂
  * @author czy
  * @date 2020-6-13
  */
@@ -28,7 +29,7 @@ public class AnimalFactory extends BaseFactory {
     }
 
     @Override
-    public Animal getAnimal(String name) {
+    public BarkAnimal getBark(String name) {
         return null;
     }
 

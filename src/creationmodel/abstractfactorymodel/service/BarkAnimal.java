@@ -6,7 +6,7 @@ package creationmodel.abstractfactorymodel.service;
  * @author czy
  * @date 2020-6-13
  */
-public interface Animal {
+public interface BarkAnimal {
     /**
      * 叫喊
      */

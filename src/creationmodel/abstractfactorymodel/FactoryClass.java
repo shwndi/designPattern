@@ -1,6 +1,6 @@
 package creationmodel.abstractfactorymodel;
 
-import creationmodel.abstractfactorymodel.factroy.AnimalBrakFactory;
+import creationmodel.abstractfactorymodel.factroy.BrakFactory;
 import creationmodel.abstractfactorymodel.factroy.AnimalFactory;
 
 /**
@@ -12,7 +12,7 @@ import creationmodel.abstractfactorymodel.factroy.AnimalFactory;
 public class FactoryClass {
     public static BaseFactory getFactory(String Type){
         if(Type.equalsIgnoreCase("BARK")){
-            return new AnimalBrakFactory();
+            return new BrakFactory();
         } else if(Type.equalsIgnoreCase("ANIMAL")){
             return new AnimalFactory();
         }
