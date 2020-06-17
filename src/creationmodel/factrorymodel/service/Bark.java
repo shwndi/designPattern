@@ -6,7 +6,7 @@ package creationmodel.factrorymodel.service;
  * @author czy
  * @date 2020-6-13
  */
-public interface Animal {
+public interface Bark {
     /**
      * 叫喊
      */

@@ -2,7 +2,7 @@ package creationmodel.abstractfactorymodel.factroy;
 
 import creationmodel.abstractfactorymodel.BaseFactory;
 import creationmodel.abstractfactorymodel.abstractbo.BaseAnimal;
-import creationmodel.abstractfactorymodel.service.BarkAnimal;
+import creationmodel.abstractfactorymodel.service.Bark;
 import creationmodel.abstractfactorymodel.service.impl.Cat;
 import creationmodel.abstractfactorymodel.service.impl.Chick;
 import creationmodel.abstractfactorymodel.service.impl.Dog;
@@ -17,7 +17,7 @@ import creationmodel.abstractfactorymodel.service.impl.Dog;
 public class BrakFactory extends BaseFactory {
 
     @Override
-    public BarkAnimal getBark(String name) {
+    public Bark getBark(String name) {
         switch (name) {
             case "DOG":
                 return  new Dog();

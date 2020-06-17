@@ -1,7 +1,7 @@
 package creationmodel.abstractfactorymodel;
 
 import creationmodel.abstractfactorymodel.abstractbo.BaseAnimal;
-import creationmodel.abstractfactorymodel.service.BarkAnimal;
+import creationmodel.abstractfactorymodel.service.Bark;
 
 
 /**
@@ -11,7 +11,7 @@ import creationmodel.abstractfactorymodel.service.BarkAnimal;
  */
 public abstract class BaseFactory {
 
-    public abstract BarkAnimal getBark(String name);
+    public abstract Bark getBark(String name);
 
     public abstract BaseAnimal getBaseAnimal(String type);
 

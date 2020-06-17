@@ -1,13 +1,13 @@
 package creationmodel.factrorymodel.service.impl;
 
-import creationmodel.factrorymodel.service.Animal;
+import creationmodel.factrorymodel.service.Bark;
 
 /**
  * 实现类
  * @author czy
  * @date 2020-6-13
  */
-public class Cat implements Animal {
+public class Cat implements Bark {
 
     @Override
     public void bark() {

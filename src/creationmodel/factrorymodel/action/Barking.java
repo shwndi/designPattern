@@ -1,7 +1,7 @@
 package creationmodel.factrorymodel.action;
 
 import creationmodel.factrorymodel.factroy.AnimalBrakFactory;
-import creationmodel.factrorymodel.service.Animal;
+import creationmodel.factrorymodel.service.Bark;
 
 /**
  * 接口类工厂测试
@@ -11,12 +11,12 @@ import creationmodel.factrorymodel.service.Animal;
  */
 public class Barking {
     public static void main(String[] args) {
-        Animal animal1 = AnimalBrakFactory.getAnimal("DOG");
-        animal1.bark();
-        Animal animal2 = AnimalBrakFactory.getAnimal("CAT");
-        animal2.bark();
-        Animal animal3 = AnimalBrakFactory.getAnimal("CHICK");
-        animal3.bark();
+        Bark bark1 = AnimalBrakFactory.getAnimal("DOG");
+        bark1.bark();
+        Bark bark2 = AnimalBrakFactory.getAnimal("CAT");
+        bark2.bark();
+        Bark bark3 = AnimalBrakFactory.getAnimal("CHICK");
+        bark3.bark();
 
 
     }

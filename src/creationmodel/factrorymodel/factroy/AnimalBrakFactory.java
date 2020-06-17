@@ -1,6 +1,6 @@
 package creationmodel.factrorymodel.factroy;
 
-import creationmodel.factrorymodel.service.Animal;
+import creationmodel.factrorymodel.service.Bark;
 import creationmodel.factrorymodel.service.impl.Cat;
 import creationmodel.factrorymodel.service.impl.Chick;
 import creationmodel.factrorymodel.service.impl.Dog;
@@ -12,7 +12,7 @@ import creationmodel.factrorymodel.service.impl.Dog;
  * @date 2020-6-13
  */
 public class AnimalBrakFactory {
-    public static Animal getAnimal(String name) {
+    public static Bark getAnimal(String name) {
         switch (name) {
             case "DOG":
                 return new Dog();
