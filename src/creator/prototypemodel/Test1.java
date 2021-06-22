@@ -1,4 +1,4 @@
-package creator.prototype;
+package creator.prototypemodel;
 
 import java.util.Date;
 

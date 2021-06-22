@@ -12,7 +12,7 @@ public class DCLLzayMan {
     private DCLLzayMan(){
         System.out.println("双重检测锁的懒汉模式");
     }
-    private  static DCLLzayMan dclLzayMan ;
+    private volatile static DCLLzayMan dclLzayMan ;
     //这种方式太消耗资源。每次调用都要加锁
 //    public static synchronized DCLLzayMan getInstance(){
 //        if (dclLzayMan==null){

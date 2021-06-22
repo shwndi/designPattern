@@ -1,7 +1,6 @@
-package creator.prototype;
+package creator.prototypemodel;
 
 import java.util.Date;
-import java.util.concurrent.Callable;
 
 /**
  * @author czy

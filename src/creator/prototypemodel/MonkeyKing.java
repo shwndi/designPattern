@@ -1,6 +1,4 @@
-package creator.prototype;
-
-import jdk.jfr.DataAmount;
+package creator.prototypemodel;
 
 /**
  * 原型模式
