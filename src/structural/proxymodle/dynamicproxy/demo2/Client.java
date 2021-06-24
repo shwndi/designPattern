@@ -4,6 +4,9 @@ import structural.proxymodle.dynamicproxy.demo1.ProxyForAnything;
 import structural.proxymodle.staticproxy.demo2.Service;
 import structural.proxymodle.staticproxy.demo2.ServiceImpl;
 
+import java.util.ArrayList;
+import java.util.Collections;
+
 /**
  * @author czy
  * @date 2021/6/22

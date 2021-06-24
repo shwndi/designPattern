@@ -1,6 +1,8 @@
 package creator.abstracefactorymodel.myabstract;
 
 /**
+ * 抽象工厂模式
+ *
  * @author czy
  * @date 2021/6/9
  */

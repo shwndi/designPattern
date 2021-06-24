@@ -1,6 +1,8 @@
 package creator.factrorymodel.simple;
 
 /**
+ * 简单工厂模式
+ *
  * @author czy
  * @date 2021/6/9
  */

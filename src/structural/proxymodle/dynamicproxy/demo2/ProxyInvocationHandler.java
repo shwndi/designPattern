@@ -7,6 +7,7 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Proxy;
 
 /**
+ * 动态处理器
  * 使用这个类，自动生成代理类。
  * @author czy
  * @date 2021/6/22
