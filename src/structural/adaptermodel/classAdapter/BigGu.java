@@ -1,7 +1,7 @@
 package structural.adaptermodel.classAdapter;
 
 /**
- * https://github.com/shwndi/designPattern.git建造者模式,你学废了吗?建造者模式,你学废了吗
+ * https://github.com/shwndi/designPattern.git建造者模式,你学废了吗?
  * 大古
  * 大古想要变身迪迦，需要一个变身器
  *
