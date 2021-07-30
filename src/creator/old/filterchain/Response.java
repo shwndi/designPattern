@@ -5,7 +5,7 @@ package creator.old.filterchain;
  * @date 2021/3/4
  */
 public class Response {
- private StringBuffer content;
+    private StringBuffer content;
 
     public Response() {
         content = new StringBuffer("response");

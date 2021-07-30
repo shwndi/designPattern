@@ -4,6 +4,8 @@ import java.util.LinkedList;
 import java.util.List;
 
 /**
+ * 控制着链节点的添加和执行
+ *
  * @author czy
  * @date 2021/3/4
  */
