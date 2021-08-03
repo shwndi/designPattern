@@ -1,4 +1,4 @@
-package dsa;
+package dsalist;
 
 /**
  * @author czy
@@ -13,7 +13,7 @@ public class test06 {
         list.addLeast("D");
         list.addLeast("E");
         try {
-            list.update(2,"K");
+            list.update(2, "K");
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }
@@ -44,7 +44,7 @@ class Node<T> {
     }
 }
 
-class MyList<T> {
+ class MyList<T> {
     private Node head;//头结点
     private int size;//元素个数
 
@@ -98,7 +98,7 @@ class MyList<T> {
     }
 
     //尾部删除
-    private void delLeast() {
+    public void delLeast() {
         if (this.head == null) {
             throw new NullPointerException("there is no instance");
         }
@@ -130,7 +130,7 @@ class MyList<T> {
         for (int i = 0; i < index - 1; i++) {
             head = head.next;
         }
-        head.next = head.next.next;
+        head.next = head.next.next==null?null:head.next.next;
         this.size--;
         return;
     }
@@ -144,7 +144,7 @@ class MyList<T> {
                 if (t.equals(t1)) {
                     return i;
                 }
-            head = head.next;
+                head = head.next;
             }
         }
         return -1;
@@ -164,9 +164,10 @@ class MyList<T> {
         }
         return null;
     }
+
     //修改
-    public MyList update(int n,T t) throws ClassNotFoundException {
-        if (n<0||n>size-1){
+    public MyList update(int n, T t) throws ClassNotFoundException {
+        if (n < 0 || n > size - 1) {
             throw new IllegalArgumentException("out of index");
         }
         Node head = this.head;
@@ -188,4 +189,89 @@ class MyList<T> {
         sb.append("NULL");
         return sb.toString();
     }
+
+    /**
+     * 回文字符串检查
+     * 空间复杂度：O(n)
+     * 时间复杂度：O(n)
+     * -
+     *
+     * @param s
+     * @return
+     */
+    public static boolean checkABA(String s) {
+        if (s == null) {
+            throw new NullPointerException("there is null value");
+        }
+
+        int length = s.length();
+        float mid = (float) (length - 1) / 2;
+        MyList<String> list = new MyList<>();
+        for (int i = 0; i < length; i++) {
+            char c = s.charAt(i);
+            if (i < mid) {
+                list.addFirst(String.valueOf(c));
+            }
+            if (i > mid) {
+                String ss = (String) list.getThisIndex(0);
+                if (!ss.equals(String.valueOf(c))) {
+                    return false;
+                }
+                list.delFirst();
+            }
+        }
+        return true;
+    }
+
+    public void reversed() {
+        Node head = this.head;
+        for (int i = 0; i < size; i++) {
+
+        }
+    }
+
+    public static boolean hasLoopV1(Node headNode) {
+
+        if (headNode == null) {
+            return false;
+        }
+
+        Node p = headNode;
+        Node q = headNode.next;
+
+        // 快指针未能遍历完所有节点
+        while (q != null && q.next != null) {
+            p = p.next; // 遍历一个节点
+            q = q.next.next; // 遍历两个个节点
+
+            // 已到链表末尾
+            if (q == null) {
+                return false;
+            } else if (p == q) {
+                // 快慢指针相遇，存在环
+                return true;
+            }
+        }
+
+        return false;
+    }
+
+
+    public static void main(String[] args) {
+//        String s = "aasasdqdsa";
+//        boolean b = MyList.checkABA(s);
+//        System.out.println(b);
+        Node node5 = new Node(5, null);
+        Node node4 = new Node(4, node5);
+        Node node3 = new Node(3, node4);
+        Node node2 = new Node(2, node3);
+        Node node1 = new Node(1, node2);
+        node5.next = node3;
+        MyList<Integer> list = new MyList<>();
+        list.head=node1;
+        list.size = 5;
+        System.out.println(list.toString());
+
+    }
+
 }
