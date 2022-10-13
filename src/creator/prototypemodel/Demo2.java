@@ -59,17 +59,39 @@ public class Demo2 implements Cloneable {
     }
 
     public static void main(String[] args) throws CloneNotSupportedException {
+//        Demo2 demo2 = new Demo2();
+//        Date date = new Date();
+//        demo2.setDate(date);
+//        demo2.setName("唐僧");
+//        Demo2 clone = (Demo2)demo2.clone();
+//        System.out.println(demo2);
+//        System.out.println(clone);
+//        date = new Date(1111111);
+//        clone.setDate(date);
+//        System.out.println("===========================");
+//        System.out.println(demo2);
+//        System.out.println(clone);
+        Date d = new Date();
+        long start = System.currentTimeMillis();
+        for (int i = 0; i < 1000; i++) {
+            Demo2 demo2 = new Demo2();
+            demo2.setName("123");
+            demo2.setDate(d);
+            System.out.print(demo2.hashCode());
+        }
+        System.out.println();
+        long mid = System.currentTimeMillis();
+        System.out.println(mid -start);
         Demo2 demo2 = new Demo2();
-        Date date = new Date();
-        demo2.setDate(date);
-        demo2.setName("唐僧");
-        Demo2 clone = (Demo2)demo2.clone();
-        System.out.println(demo2);
-        System.out.println(clone);
-        date = new Date(1111111);
-        clone.setDate(date);
-        System.out.println("===========================");
-        System.out.println(demo2);
-        System.out.println(clone);
+        demo2.setName("123");
+        demo2.setDate(d);
+        System.out.print(demo2.hashCode());
+        for (int i = 0; i < 999; i++) {
+            Demo2 clone = (Demo2)demo2.clone();
+            System.out.print(clone.hashCode());
+        }
+        System.out.println();
+        System.out.println(System.currentTimeMillis()-mid);
+
     }
 }

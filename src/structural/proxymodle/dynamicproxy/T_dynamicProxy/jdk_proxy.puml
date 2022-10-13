@@ -1,0 +1,16 @@
+@startuml
+start
+:客户端;
+:proxy;
+:asm;
+:$Proxy0  ->A;
+:实现InvocationHandler接口,实现invoke()方法->B;
+:创建A类的实例->P，通过构造器初
+始化把B类的对象Q注入到P;
+:代理类P 调用Q实例的invoke()方法;
+:调用Q实例的invoke方法，
+使用反射通过Method 中的 invoke()方法
+完成方法的执行，并产生返回值;
+
+stop
+@enduml

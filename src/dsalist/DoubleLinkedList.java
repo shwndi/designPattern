@@ -1,5 +1,7 @@
 package dsalist;
 
+import java.util.Collections;
+
 /**
  * 双向链表
  *
