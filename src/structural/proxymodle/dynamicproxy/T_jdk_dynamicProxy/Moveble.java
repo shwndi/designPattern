@@ -1,4 +1,4 @@
-package structural.proxymodle.dynamicproxy.T_dynamicProxy;
+package structural.proxymodle.dynamicproxy.T_jdk_dynamicProxy;
 
 /**
  * @author czy

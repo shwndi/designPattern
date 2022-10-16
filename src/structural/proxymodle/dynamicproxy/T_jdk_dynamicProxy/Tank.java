@@ -1,4 +1,4 @@
-package structural.proxymodle.dynamicproxy.T_dynamicProxy;
+package structural.proxymodle.dynamicproxy.T_jdk_dynamicProxy;
 
 import java.lang.reflect.InvocationHandler;
 import java.lang.reflect.Method;
